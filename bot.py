@@ -5,8 +5,13 @@ Preciso automatizar minhas mensagens para clientes gostaria de saber valores, e 
 import openpyxl
 #lib para formatar links para links de api
 from urllib.parse import quote
+#lib para criar tempo de espera
+from time import sleep
 #lib para abrir navegador
 import webbrowser
+
+webbrowser.open('https://web.whatsapp.com/')
+sleep(20)
 
 # Ler planilha e guardar as informações
 planilha_teste = openpyxl.load_workbook('clientes.xlsx')
